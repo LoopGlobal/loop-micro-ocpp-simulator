@@ -1,0 +1,7 @@
+services:
+  loop-sim-charger:
+    build: .
+    container_name: loop-sim-charger
+    ports:
+      - "8000:8000"
+

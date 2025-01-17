@@ -166,8 +166,9 @@ int main() {
     mg_http_listen(&mgr, api_url, http_serve, (void*)api_url);     // Create listening connection
 
     osock = new MicroOcpp::MOcppMongooseClient(&mgr,
-        "ws://echo.websocket.events",
-        "charger-01",
+        // "ws://echo.websocket.events",
+		"ws://localhost:8180/steve/websocket/CentralSystemService/",
+        "loop-sim-charger-01",
         "",
         "",
         filesystem,
